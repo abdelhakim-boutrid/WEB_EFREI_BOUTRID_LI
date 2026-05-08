@@ -415,8 +415,8 @@ section li {
 /* container */
 .contact-container {
   display: flex;
-  justify-content: space-around;
-  gap: 30px;
+  justify-content: center;
+  gap: 50px;
   flex-wrap: wrap;
   margin-top: 30px;
 }
