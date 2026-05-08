@@ -751,3 +751,61 @@ form button:hover {
 }
 
 
+
+/* ce qui concerne la carte */
+.carte-section {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  text-align: center;
+}
+ 
+/* Le titre de la section */
+.carte-section h3 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+ 
+/* Le texte sous le titre */
+.carte-section p {
+  margin-bottom: 15px;
+  color: #555;
+}
+ 
+/* La div qui accueille la carte Leaflet */
+#map {
+  height: 400px;        
+  border-radius: 12px;    
+  border: 2px solid #4da6ff; 
+}
+ 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+ 
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+ 
+  nav {
+    margin-top: 10px;
+  }
+ 
+  .chiffres ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+ 
+  .images img {
+    height: 250px;
+  }
+ 
+  /* La carte prend moins de hauteur sur mobile */
+  #map {
+    height: 280px;
+  }
+ 
+}

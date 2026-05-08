@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
-
+/*debut manip*/
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil - Département Informatique EFREI</title>
   <link rel="stylesheet" href="../css/style.css">
+
+  /*librairie de la carte */
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
 </head>
 
 <body>
@@ -51,7 +54,7 @@
             <img src="../image/campus2.png" alt = "image du campus 2">
             <img src="../image/campus3.png" alt = "image du campus 3">
           </div>
-        </div>
+        </div>Ò
 
         <div class="navigation">
           <label for="img1"></label>
@@ -61,6 +64,23 @@
 
       </div>
     </section>
+    
+  
+  
+  
+  </section>
+ 
+    /*librairie leaf qui est open source et qui vas nous afficher la carte de l'ecole*/
+    <section class="carte-section">
+      <h3>📍 Nous trouver</h3>
+      <p>EFREI Paris – 30-32 Av. de la République, 94800 Villejuif</p>
+ 
+      /* la map qui vas etre remplit pat leaf automatiquement*/
+      <div id="map"></div>
+    </section>
+
+
+
 
     <section class="chiffres">
       <h3>Chiffres clés</h3>
@@ -96,7 +116,10 @@
     30-32 Av. de la République, 94800 Villejuif</P>
     <a href="a_propos.html">À propos</a>
   </footer>
-  
+
+  /*librairie de la carte */
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
   <script src="../js/script.js"></script>
   
 </body>

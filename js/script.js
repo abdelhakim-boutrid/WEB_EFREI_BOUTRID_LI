@@ -127,3 +127,37 @@ document.querySelectorAll("nav a").forEach(link => {
     link.style.paddingBottom = "5px";
   }
 });
+
+
+const divMap = document.getElementById('map');
+ 
+if (divMap) {
+ 
+  // creation de la map centré sur efrei grace a L.map qui dit a leaf de prendre le #map
+  // [latitude, longitude], niveauDeZoom)
+  
+  const map = L.map('map').setView([48.7923, 2.3638], 16);
+ 
+
+  // affichage des batiment et autre structure
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+  }).addTo(map);
+ 
+
+
+
+  
+  // .bindPopup() marqueur sur la carte qui est clickable
+  
+  L.marker([48.7923, 2.3638])
+    .addTo(map)
+    .bindPopup(
+      '<b>EFREI Paris</b><br>' +
+      '30-32 Av. de la République<br>' +
+      '94800 Villejuif<br>' +
+      '<a href="https://maps.google.com/?q=EFREI+Paris" target="_blank">Ouvrir dans Google Maps</a>'
+    )
+    .openPopup();
+ 
+}
