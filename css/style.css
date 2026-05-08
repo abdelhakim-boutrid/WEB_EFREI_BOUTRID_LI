@@ -757,71 +757,102 @@ form button:hover {
 /*========== le footer ====================*/
 
 .footer-premium {
-  background: linear-gradient(90deg, #082e53, #0077cc);
+  background-color: #001a33; /* Bleu très foncé EFREI */
+  background-image: url('../image/structure_dome.png'); /* Ton image de dôme */
+  background-repeat: no-repeat;
+  background-position: right bottom; /* Positionne le dôme comme sur l'image */
+  background-size: contain;
   color: #ffffff;
-  padding: 60px 20px;
-  font-family: Arial, sans-serif;
+  padding: 60px 20px 20px 20px;
+  font-family: 'Arial', sans-serif;
 }
 
 .footer-container {
-  max-width: 1100px;
+  max-width: 1200px;
   margin: 0 auto;
+}
+
+/* Style des Certifications */
+.footer-certs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  filter: brightness(0) invert(1); /* Rend les logos tout blancs */
+  opacity: 0.8;
+}
+
+.footer-certs img {
+  height: 40px;
+}
+
+.footer-separator {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 40px;
+}
+
+/* Alignement principal */
+.footer-main {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 20px;
 }
 
 .footer-col {
   flex: 1;
-  min-width: 250px;
+  min-width: 200px;
+}
+
+.logo-center {
   text-align: center;
 }
 
-/* Colonne de gauche (Texte) */
-.footer-col h3 {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+.main-logo {
+  width: 150px;
 }
 
-.footer-col p {
-  font-size: 0.9rem;
-  color: #cccccc; /* Gris clair pour le texte secondaire */
-  margin: 5px 0;
+.links-right {
+  text-align: right;
 }
 
-/* Colonne centrale (Logo) */
-.footer-logo img {
-  width: 120px;
-  filter: brightness(0) invert(1); /* Force le logo en blanc si besoin */
-  margin-bottom: 15px;
-}
-
-.copyright {
-  font-size: 0.8rem;
-  color: #666666;
-}
-
-/* Colonne de droite (Liens) */
-.footer-col a {
+.links-right a {
   display: block;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
-  margin: 8px 0;
-  font-size: 0.9rem;
-  transition: color 0.3s;
+  margin-bottom: 10px;
 }
 
-.footer-col a:hover {
-  color: #0078d7; /* Bleu EFREI au survol */
+/* Réseaux Sociaux */
+.footer-socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
 }
 
+.footer-socials a {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 50%;
+  font-size: 12px;
+  transition: 0.3s;
+}
 
+.footer-socials a:hover {
+  background: #0078d7;
+}
 
-
+.footer-bottom {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.5);
+}
 
 /* ============ce qui concerne la carte ======================*/
 .carte-section {
