@@ -25,7 +25,32 @@ document.querySelectorAll("form").forEach(form => {
   });
 });
 
+<<<<<<< HEAD
 /* Forrmulaire contact + admission */
+=======
+/* ============================================================
+   1. GESTION DES FORMATIONS (Page: cours_formation.html)
+   ============================================================ */
+function afficher(id) {
+  // Sélectionne toutes les sections de contenu
+  const sections = document.querySelectorAll(".contenu");
+
+  // Retire la classe 'actif' de toutes les sections
+  sections.forEach(section => {
+    section.classList.remove("actif");
+  });
+
+  // Ajoute la classe 'actif' à la section cliquée
+  const sectionCible = document.getElementById(id);
+  if (sectionCible) {
+    sectionCible.classList.add("actif");
+  }
+}
+
+/* ============================================================
+   2. GESTION DES FORMULAIRES (Page: contact.html)
+   ============================================================ */
+>>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
 document.querySelectorAll("form").forEach(form => {
   form.addEventListener("submit", function(e) {
     e.preventDefault(); // Empêche le rechargement de la page
@@ -46,8 +71,14 @@ document.querySelectorAll("form").forEach(form => {
   });
 });
 
+<<<<<<< HEAD
 
 /* changement dimage automatique de laccueil */
+=======
+/* ============================================================
+   3. CARROUSEL AUTOMATIQUE (Page: index.html)
+   ============================================================ */
+>>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
 const inputsRadio = document.querySelectorAll('input[name="slider"]');
 let indexActuel = 0;
 
@@ -61,8 +92,14 @@ if (inputsRadio.length > 0) {
   }, 4000); // Change d'image toutes les 4 secondes
 }
 
+<<<<<<< HEAD
 
 /* l'animation au scroll des pages*/
+=======
+/* ============================================================
+   4. ANIMATION AU SCROLL (Toutes les pages)
+   ============================================================ */
+>>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
 const observerOptions = {
   threshold: 0.1
 };
@@ -79,9 +116,27 @@ const observer = new IntersectionObserver((entries) => {
 // On applique l'effet aux sections pour un rendu fluide
 document.querySelectorAll("section").forEach(section => {
   section.style.opacity = "0";
+<<<<<<< HEAD
   section.style.transform = "translateY(50px)";
+=======
+  section.style.transform = "translateY(20px)";
+>>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
   section.style.transition = "all 0.6s ease-out";
   observer.observe(section);
 });
 
+<<<<<<< HEAD
 
+=======
+/* ============================================================
+   5. NAVIGATION ACTIVE (Toutes les pages)
+   ============================================================ */
+// Met en gras le lien de navigation correspondant à la page actuelle
+const pageActuelle = window.location.pathname.split("/").pop();
+document.querySelectorAll("nav a").forEach(link => {
+  if (link.getAttribute("href") === pageActuelle) {
+    link.style.borderBottom = "2px solid white";
+    link.style.paddingBottom = "5px";
+  }
+});
+>>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
