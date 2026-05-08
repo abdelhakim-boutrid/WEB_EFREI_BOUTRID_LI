@@ -1,4 +1,3 @@
-/* Sélectionner ce qu'on veut afficher dynamiquement dans cours et formation */
 
 function afficher(id) {
   const sections = document.querySelectorAll(".contenu");
@@ -25,9 +24,7 @@ document.querySelectorAll("form").forEach(form => {
   });
 });
 
-<<<<<<< HEAD
 /* Forrmulaire contact + admission */
-=======
 /* ============================================================
    1. GESTION DES FORMATIONS (Page: cours_formation.html)
    ============================================================ */
@@ -50,7 +47,6 @@ function afficher(id) {
 /* ============================================================
    2. GESTION DES FORMULAIRES (Page: contact.html)
    ============================================================ */
->>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
 document.querySelectorAll("form").forEach(form => {
   form.addEventListener("submit", function(e) {
     e.preventDefault(); // Empêche le rechargement de la page
@@ -71,14 +67,11 @@ document.querySelectorAll("form").forEach(form => {
   });
 });
 
-<<<<<<< HEAD
 
 /* changement dimage automatique de laccueil */
-=======
 /* ============================================================
    3. CARROUSEL AUTOMATIQUE (Page: index.html)
    ============================================================ */
->>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
 const inputsRadio = document.querySelectorAll('input[name="slider"]');
 let indexActuel = 0;
 
@@ -92,14 +85,11 @@ if (inputsRadio.length > 0) {
   }, 4000); // Change d'image toutes les 4 secondes
 }
 
-<<<<<<< HEAD
 
 /* l'animation au scroll des pages*/
-=======
 /* ============================================================
    4. ANIMATION AU SCROLL (Toutes les pages)
    ============================================================ */
->>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
 const observerOptions = {
   threshold: 0.1
 };
@@ -116,18 +106,16 @@ const observer = new IntersectionObserver((entries) => {
 // On applique l'effet aux sections pour un rendu fluide
 document.querySelectorAll("section").forEach(section => {
   section.style.opacity = "0";
-<<<<<<< HEAD
+
   section.style.transform = "translateY(50px)";
-=======
-  section.style.transform = "translateY(20px)";
->>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
+
+
   section.style.transition = "all 0.6s ease-out";
   observer.observe(section);
 });
 
-<<<<<<< HEAD
 
-=======
+
 /* ============================================================
    5. NAVIGATION ACTIVE (Toutes les pages)
    ============================================================ */
@@ -139,4 +127,3 @@ document.querySelectorAll("nav a").forEach(link => {
     link.style.paddingBottom = "5px";
   }
 });
->>>>>>> 892974c689bbb11c2d9f79902aa10f29b283e512
