@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="../image/efrei.png" alt="Logo EFREI">
+      </a>
+    </div>
+    <h1>Département Informatique EFREI</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="cours_formation.html">Cours & formation</a>
+      <a href="equipe_enseignante.html">Équipe</a>
+      <a href="vie_etudiante.html">Vie étudiante</a>
+      <a href="contact.html">Contact</a>
+      <a href="a_propos.html">À propos</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="introduction">
+      <h2>Contact & Admissions</h2>
+      <p>Une question ? Contactez-nous ou faites une demande d’admission.</p>
+    </section>
+
+    <div class="contact-container">
+
+      <!-- FORMULAIRE CONTACT -->
+      <section class="formulaire">
+        <h3>📩 Nous contacter</h3>
+
+        <form>
+          <input type="text" placeholder="Nom" required>
+          <input type="email" placeholder="Email" required>
+          <textarea placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+
+        <p class="message-succes">Message envoyé avec succès ✅</p>
+      </section>
+
+      <!-- ADMISSIONS -->
+      <section class="admissions">
+        <h3>🎓 Admissions</h3>
+
+        <form>
+          <input type="text" placeholder="Nom complet" required>
+          <input type="email" placeholder="Email" required>
+
+          <select required>
+            <option value="">Choisir une formation</option>
+            <option>Bachelor</option>
+            <option>Prépa</option>
+            <option>Cycle ingénieur</option>
+          </select>
+
+          <textarea placeholder="Motivation" required></textarea>
+
+          <button type="submit">Postuler</button>
+        </form>
+
+        <p class="message-succes">Demande envoyée avec succès 🎓</p>
+
+      </section>
+
+    </div>
+
+    <section class="faq">
+      <h3>❓ FAQ - Questions fréquentes</h3>
+
+      <div class="faq-item">
+        <input type="checkbox" id="q1">
+        <label for="q1">Quels sont les critères d’admission ?</label>
+        <p>Les admissions se font sur dossier et entretien de motivation.</p>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="q2">
+        <label for="q2">Puis-je intégrer directement le cycle ingénieur ?</label>
+        <p>Oui, sous certaines conditions (niveau Bac+2 ou équivalent).</p>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="q3">
+        <label for="q3">Y a-t-il des stages obligatoires ?</label>
+        <p>Oui, plusieurs stages sont intégrés dans le cursus.</p>
+      </div>
+
+      <div class="faq-item">
+        <input type="checkbox" id="q4">
+        <label for="q4">Comment contacter l’administration ?</label>
+        <p>Vous pouvez utiliser le formulaire de contact ou envoyer un mail à admissions@efrei.fr.</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 EFREI - Département Informatique</p>
+    <P> +33 188 289 001 <br>
+      admissions@efrei.fr <br>
+      30-32 Av. de la République, 94800 Villejuif</P>
+    <a href="a_propos.html">À propos</a>
+  </footer>
+
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>
