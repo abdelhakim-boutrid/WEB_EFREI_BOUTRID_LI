@@ -1,0 +1,751 @@
+/* ==================== Pour l'index.html ================ */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Fond */
+body {
+  background: linear-gradient(to bottom, #e6f2ff, #ffffff);
+  color: #333;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #4da6ff, #0077cc);
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  flex: 1 100%;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.logo {
+  background: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 55px;
+}
+
+/* NAV */
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-basis: 100%;
+  gap: 15px;
+}
+
+nav a {
+  color: white;
+  margin: 0;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* MAIN */
+main {
+  padding: 40px;
+  text-align: center;
+}
+
+/* INTRO */
+.introduction {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.introduction h2 {
+  color: #0077cc;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+/* SECTIONS */
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+/* CAROUSEL */
+.carousel {
+  max-width: 700px;
+  margin: auto;
+}
+
+.conteneur-images {
+  overflow: hidden;
+  border-radius: 15px;
+  height: 350px;
+}
+
+.images {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.images img {
+  width: 100%;
+  flex-shrink: 0;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.images img:hover {
+  transform: scale(1.05);
+}
+
+/* INPUT */
+.carousel input {
+  display: none;
+}
+
+/* SLIDE */
+#img1:checked ~ .conteneur-images .images {
+  transform: translateX(0%);
+}
+
+#img2:checked ~ .conteneur-images .images {
+  transform: translateX(-100%);
+}
+
+#img3:checked ~ .conteneur-images .images {
+  transform: translateX(-200%);
+}
+
+/* NAV POINTS */
+.navigation {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.navigation label {
+  width: 12px;
+  height: 12px;
+  background: #4da6ff;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* POINT ACTIF */
+input#img1:checked ~ .navigation label[for="img1"],
+input#img2:checked ~ .navigation label[for="img2"],
+input#img3:checked ~ .navigation label[for="img3"] {
+  background: #0077cc;
+  transform: scale(1.2);
+}
+
+/* CHIFFRES */
+.chiffres ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.chiffres li {
+  background: #e6f2ff;
+  padding: 15px;
+  border-radius: 10px;
+  min-width: 150px;
+  font-weight: bold;
+  margin: 5px;
+}
+
+/* ACTUS */
+.actualites li {
+  margin: 10px auto;
+}
+
+/* Retirer les points aux débuts */
+.chiffres ul,
+.actualites ul {
+  list-style: none;
+  padding: 0;
+}
+
+/* BOUTONS */
+.liens-rapides a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #4da6ff, #0077cc);
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.liens-rapides a:hover {
+  transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+  background: #0077cc;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  .chiffres ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .images img {
+    height: 250px;
+  }
+
+}
+
+/* ============================== Pour cours_formation.html =============================*/
+
+.menu-formations {
+  text-align: center;
+  margin: 30px;
+}
+
+.menu-formations button {
+  margin: 10px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  background: #4da6ff;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.menu-formations button:hover {
+  background: #0077cc;
+}
+
+/* cacher contenu */
+.contenu {
+  display: none;
+}
+
+/* afficher actif */
+.contenu.actif {
+  display: block;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+}
+
+section li {
+  background: #e6f2ff;
+  margin: 8px auto;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 400px;
+}
+
+.calendrier {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.calendrier th {
+  background: linear-gradient(90deg, #4da6ff, #0077cc);
+  color: white;
+  padding: 12px;
+}
+
+.calendrier td {
+  padding: 12px;
+  background: #f5f9ff;
+}
+
+.calendrier tr:nth-child(even) td {
+  background: #e6f2ff;
+}
+
+.calendrier tr:hover td {
+  background: #d4edff;
+}
+
+
+/* ================ Pour equipe_enseignantee.html =============*/
+
+/* grille */
+.grille-profs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+/* carte */
+.carte-prof {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte-prof:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* image */
+.carte-prof img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* texte */
+.carte-prof h3 {
+  color: #0077cc;
+  margin: 10px 0 5px;
+}
+
+.carte-prof p {
+  font-size: 14px;
+  color: #555;
+}
+
+.grille-theses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.carte-these {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  text-align: left;
+  position: relative;
+}
+
+.carte-these:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* année en badge */
+.annee {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: #4da6ff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+/* titre */
+.carte-these h3 {
+  color: #0077cc;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* auteur */
+.auteur {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+}
+
+/*=========================== pour contact.html ===========================*/
+
+/* container */
+.contact-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+/* sections */
+.formulaire, .admissions {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+/* titres */
+.formulaire h3, .admissions h3 {
+  margin-bottom: 15px;
+  color: #0077cc;
+}
+
+/* inputs */
+form input,
+form textarea,
+form select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* textarea */
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
+/* bouton */
+form button {
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(90deg, #4da6ff, #0077cc);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  transform: scale(1.05);
+}
+
+/* bloc FAQ */
+.faq {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+/* item */
+.faq-item {
+  background: white;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* cacher checkbox */
+.faq-item input {
+  display: none;
+}
+
+/* question */
+.faq-item label {
+  display: block;
+  font-weight: bold;
+  cursor: pointer;
+  color: #0077cc;
+  position: relative;
+}
+
+/* icône + */
+.faq-item label::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+}
+
+/* réponse cachée */
+.faq-item p {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+/* afficher réponse */
+.faq-item input:checked ~ p {
+  max-height: 200px;
+}
+
+/* changer + en - */
+.faq-item input:checked + label::after {
+  content: "-";
+}
+
+/* message desuccès quand c'est bien envoyé*/
+.message-succes {
+  display: none;
+  margin-top: 10px;
+  padding: 10px;
+  background: #d4edff;
+  color: #0077cc;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* ======================= pour vie_etudiante.html ================ */
+
+/* grille */
+.grille-installations {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* carte */
+.carte-installation {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.carte-installation:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* image */
+.carte-installation img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* titre */
+.carte-installation h3 {
+  color: #0077cc;
+  margin: 10px 0;
+}
+
+/* texte */
+.carte-installation p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+
+/* grille */
+.grille-asso {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* carte */
+.carte-asso {
+  background: linear-gradient(135deg, #e6f2ff, #ffffff);
+  border-radius: 20px;
+  padding: 25px;
+  text-align: center;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+/* effet hover */
+.carte-asso:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+/* icône */
+.icone {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* titre */
+.carte-asso h3 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+/* texte */
+.carte-asso p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+
+.liste-temoignages {
+  max-width: 800px;
+  margin: 30px auto;
+  text-align: left;
+}
+
+.liste-temoignages blockquote {
+  position: relative;
+  background: #f5f9ff;
+  border-left: 5px solid #4da6ff;
+  margin: 20px 0;
+  padding: 20px 25px;
+  border-radius: 10px;
+  font-style: italic;
+  transition: 0.3s;
+}
+
+.liste-temoignages blockquote:hover {
+  background: #e6f2ff;
+}
+
+/* auteur */
+.liste-temoignages span {
+  display: block;
+  margin-top: 10px;
+  font-style: normal;
+  font-weight: bold;
+  color: #0077cc;
+}
+
+/* guillemets décoratifs */
+.liste-temoignages blockquote::before {
+  content: "“";
+  font-size: 50px;
+  color: #4da6ff;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+}
+
+
+/*=================== a_propos ====================*/
+
+.grille-auteurs {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+/* carte */
+.carte-auteur {
+  background: linear-gradient(135deg, #e6f2ff, #ffffff);
+  border-radius: 20px;
+  padding: 30px 20px;
+  width: 280px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+/* effet hover */
+.carte-auteur:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* photo */
+.carte-auteur img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #4da6ff;
+  margin-bottom: 15px;
+}
+
+/* nom */
+.carte-auteur h4 {
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+/* description */
+.carte-auteur p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* réseaux */
+.reseaux a {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px 15px;
+  border-radius: 25px;
+  background: linear-gradient(90deg, #4da6ff, #0077cc);
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  transition: 0.3s;
+}
+
+.reseaux a:hover {
+  transform: scale(1.1);
+}
+
+/* ligne décorative */
+.carte-auteur::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #4da6ff, #0077cc);
+  top: 0;
+  left: 0;
+}
