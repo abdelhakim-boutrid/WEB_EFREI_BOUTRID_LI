@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cours et Formations</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <a href="index.html">
+        <img src="../image/efrei.png" alt="Logo EFREI">
+      </a>
+    </div>
+    <h1>Département Informatique EFREI</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="cours_formation.html">Cours & formation</a>
+      <a href="equipe_enseignante.html">Équipe</a>
+      <a href="vie_etudiante.html">Vie étudiante</a>
+      <a href="contact.html">Contact</a>
+      <a href="a_propos.html">À propos</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="introduction">
+      <h2>Nos cours et formations</h2>
+      <p>Différentes formations sont proposées par le département informatique de l'Efrei Paris. <br>Des séances de permanences sont également proposées pour les étudiants.</p>
+    </section>
+
+    <!-- MENU -->
+    <div class="menu-formations">
+      <button onclick="afficher('bachelor')">Bachelor</button>
+      <button onclick="afficher('prepa')">Prépa</button>
+      <button onclick="afficher('ingenieur')">Cycle ingénieur</button>
+      <button onclick="afficher('permanence')">Permanence</button>
+    </div>
+
+    <!-- CONTENU -->
+
+    <section id="bachelor" class="contenu actif">
+      <h3>🎓 Bachelor (Bac +1 à Bac +3)</h3>
+      <ul>
+        <li>Développement web</li>
+        <li>Programmation</li>
+        <li>Bases de données</li>
+      </ul>
+    </section>
+
+    <section id="prepa" class="contenu">
+      <h3>📚 Prépa-intégré (Bac +1 à Bac +2)</h3>
+      <ul>
+        <li>Mathématiques</li>
+        <li>Algorithmique</li>
+        <li>Physique</li>
+        <li>Réseaux et sécurité</li>
+        <li>Base de donnée</li>
+        <li>Langues</li>
+
+      </ul>
+    </section>
+
+    <section id="ingenieur" class="contenu">
+      <h3>💻 Cycle ingénieur (Bac +3 à Bac +5)</h3>
+      <ul>
+        <li>IA</li>
+        <li>Cybersécurité</li>
+        <li>Cloud</li>
+        <li>Software Engineer</li>
+        <li>Data Engineer</li>
+      </ul>
+    </section>
+
+    <section id="permanence" class="contenu">
+      <h3>🕒 Permanence</h3>
+      <p>Horaires des permanences pour accompagner les étudiants :</p>
+
+      <table class="calendrier">
+        <thead>
+          <tr>
+            <th>Jour</th>
+            <th>Horaires</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Lundi</td>
+            <td>14h - 17h</td>
+          </tr>
+          <tr>
+            <td>Mardi</td>
+            <td>10h - 12h</td>
+          </tr>
+          <tr>
+            <td>Mercredi</td>
+            <td>14h - 17h</td>
+          </tr>
+          <tr>
+            <td>Jeudi</td>
+            <td>10h - 12h</td>
+          </tr>
+          <tr>
+            <td>Vendredi</td>
+            <td>13h - 16h</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </main>
+
+
+  <footer>
+    <p>© 2026 EFREI - Département Informatique</p>
+    <P> +33 188 289 001 <br>
+    admissions@efrei.fr <br>
+    30-32 Av. de la République, 94800 Villejuif</P>
+    <a href="a_propos.html">À propos</a>
+  </footer>
+
+  <script src="../js/script.js"></script>
+
+</body>
+
+</html>
