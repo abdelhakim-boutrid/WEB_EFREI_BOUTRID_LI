@@ -32,4 +32,4 @@ Le design respecte la charte graphique de l'EFREI avec :
 - Une typographie claire et lisible pour faciliter la lecture des informations pédagogiques.
 
 ## ✍️ Auteur
-**Abdelhakim Boutrid** - Étudiant en Informatique à l'EFREI.
+**Abdelhakim Boutrid** - Davy Li.
