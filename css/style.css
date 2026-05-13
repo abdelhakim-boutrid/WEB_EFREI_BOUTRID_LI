@@ -186,6 +186,8 @@ input#img3:checked ~ .navigation label[for="img3"] {
   margin: 10px auto;
 }
 
+
+
 /* Retirer les points aux débuts */
 .chiffres ul,
 .actualites ul {
