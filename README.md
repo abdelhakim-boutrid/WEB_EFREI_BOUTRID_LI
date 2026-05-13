@@ -31,5 +31,5 @@ Le design respecte la charte graphique de l'EFREI avec :
 - Des cartes (cards) avec ombres portées (`box-shadow`) pour un effet de profondeur.
 - Une typographie claire et lisible pour faciliter la lecture des informations pédagogiques.
 
-## ✍️ Auteur
-**Abdelhakim Boutrid** - Étudiant en Informatique à l'EFREI.
+## ✍️ Auteurs
+**Abdelhakim Boutrid** - Davy Li.
